@@ -55,6 +55,19 @@
   - Create Comment model
   - Create Like model
 -[x] Creating migreation data schema for users, posts, comments and likes.
+-[x] Create model classes for all entities as shown in the ERD diagram.
+-[x] Set up associations between models.
+  - Remember that author_id column in posts table should be the foreign_key for the users table.
+-[x] Models should include some additional methods.
+  - Users
+    - A method that returns the 3 most recent posts for a given user.
+  - Posts
+    - A method that updates the posts counter for a user.
+    - A method which returns the 5 most recent comments for a given post.
+  - Comments
+    - A method that updates the comments counter for a post.
+  - Likes
+    - A method that updates the likes counter for a post.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
