@@ -105,14 +105,14 @@ Install this project with:
 
 To run the project, run the following command:
 
--[] rails server
+- [] rails server
 
 
 ### Run tests
 
 To run tests, run the following command:
 
--[] rails test
+- [] Rspec spec
 
 <!-- AUTHORS -->
 
@@ -167,6 +167,6 @@ Feel free to check the [issues page](https://github.com/BB-Simon/blog-app/issues
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT licensed](./LICENSE.txt).
+This project is [MIT licensed](./LICENSE.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
