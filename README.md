@@ -11,7 +11,6 @@
 - [📖 \[Blog App\] ](#-Blog App-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -55,6 +54,19 @@
   - Create Comment model
   - Create Like model
 -[x] Creating migreation data schema for users, posts, comments and likes.
+-[x] Create model classes for all entities as shown in the ERD diagram.
+-[x] Set up associations between models.
+  - Remember that author_id column in posts table should be the foreign_key for the users table.
+-[x] Models should include some additional methods.
+  - Users
+    - A method that returns the 3 most recent posts for a given user.
+  - Posts
+    - A method that updates the posts counter for a user.
+    - A method which returns the 5 most recent comments for a given post.
+  - Comments
+    - A method that updates the comments counter for a post.
+  - Likes
+    - A method that updates the likes counter for a post.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,14 +104,14 @@ Install this project with:
 
 To run the project, run the following command:
 
--[] rails server
+- [ ] rails server
 
 
 ### Run tests
 
 To run tests, run the following command:
 
--[] rails test
+- [ ] Rspec spec
 
 <!-- AUTHORS -->
 
@@ -154,6 +166,6 @@ Feel free to check the [issues page](https://github.com/BB-Simon/blog-app/issues
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT licensed](./LICENSE.txt).
+This project is [MIT licensed](./LICENSE).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
