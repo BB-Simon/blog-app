@@ -167,6 +167,6 @@ Feel free to check the [issues page](https://github.com/BB-Simon/blog-app/issues
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT licensed](./LICENSE.md).
+This project is [MIT licensed](./LICENSE).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
