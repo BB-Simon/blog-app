@@ -105,14 +105,14 @@ Install this project with:
 
 To run the project, run the following command:
 
-- [] rails server
+- [ ] rails server
 
 
 ### Run tests
 
 To run tests, run the following command:
 
-- [] Rspec spec
+- [ ] Rspec spec
 
 <!-- AUTHORS -->
 
