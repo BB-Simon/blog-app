@@ -1,8 +1,10 @@
 require 'rails_helper'
 
 describe Post, type: :model do
-  test_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos', bio: 'Teacher from Mexico.', post_counter: 0)
-  test_post = Post.new(author: test_user, title: 'Hello', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
+  test_user = User.create(name: 'Tom', photo: 'https://unsplash.com/photos', bio: 'Teacher from Mexico.',
+                          post_counter: 0)
+  test_post = Post.new(author: test_user, title: 'Hello', text: 'This is my first post', comments_counter: 0,
+                       likes_counter: 0)
 
   before { test_post.save }
   it 'Title should be present' do
@@ -36,7 +38,8 @@ describe Post, type: :model do
   end
 
   it 'post should return top 5 comments' do
-    test_post = Post.create(author: test_user, title: 'Hello', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
+    test_post = Post.create(author: test_user, title: 'Hello', text: 'This is my first post', comments_counter: 0,
+                            likes_counter: 0)
     Comment.create(post: test_post, author: test_user, text: 'This is my first comment')
     Comment.create(post: test_post, author: test_user, text: 'This is my 2nd comment')
     Comment.create(post: test_post, author: test_user, text: 'This is my 3rd comment')
