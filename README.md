@@ -48,16 +48,16 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
--[x] Creating data model
+- [x] Creating data model
   - Create User model
   - Create Post model
   - Create Comment model
   - Create Like model
--[x] Creating migreation data schema for users, posts, comments and likes.
--[x] Create model classes for all entities as shown in the ERD diagram.
--[x] Set up associations between models.
+- [x] Creating migreation data schema for users, posts, comments and likes.
+- [x] Create model classes for all entities as shown in the ERD diagram.
+- [x] Set up associations between models.
   - Remember that author_id column in posts table should be the foreign_key for the users table.
--[x] Models should include some additional methods.
+- [x] Models should include some additional methods.
   - Users
     - A method that returns the 3 most recent posts for a given user.
   - Posts
@@ -67,6 +67,18 @@
     - A method that updates the comments counter for a post.
   - Likes
     - A method that updates the likes counter for a post.
+
+- [x] Add the following validations:
+    - For the User model:
+      - Name must not be blank.
+      - PostsCounter must be an integer greater than or equal to zero.
+    - For the Post mode
+      - Title must not be blank.
+      - Title must not exceed 250 characters.
+      - CommentsCounter must be an integer greater than or equal to zero.
+      - LikesCounter must be an integer greater than or equal to zero.
+
+- [x] Add unit specs for all of your models' methods and validations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
