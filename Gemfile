@@ -57,6 +57,7 @@ group :development, :test do
 
   # Rspec for rails cmd: [bundle install, rails g rspec:install]
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
 end
 
 group :development do
