@@ -79,6 +79,14 @@
       - LikesCounter must be an integer greater than or equal to zero.
 
 - [x] Add unit specs for all of your models' methods and validations.
+- [x] Add users's index&show and user's posts's index&show routes
+- [x] For each URL you should create:
+    - A route.
+    - An action in the correct controller.
+    - A view file.
+- [x] View files should include only placeholders written in plain HTML, e.g:
+    - Here is a list of posts for a given user
+- [x] Make sure that you added code to handle only the 4 required URLs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
