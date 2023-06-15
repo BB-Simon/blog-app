@@ -87,6 +87,12 @@
 - [x] View files should include only placeholders written in plain HTML, e.g:
     - Here is a list of posts for a given user
 - [x] Make sure that you added code to handle only the 4 required URLs.
+- [x] Add RSpec as a gem to your project.
+- [x] Create a Request spec file for all your controllers.
+- [x] Make sure that for each action you check:
+    - If response status was correct.
+    - If a correct template was rendered.
+    - If the response body includes correct placeholder text.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
