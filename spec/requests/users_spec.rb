@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "Users", type: :request do
-  describe "GET /users" do
-    it "renders a successful response" do
+RSpec.describe 'Users', type: :request do
+  describe 'GET /users' do
+    it 'renders a successful response' do
       get users_path
       expect(response).to be_successful
     end
@@ -23,13 +23,13 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-  describe "GET /users/:id" do
-    it "Renders a successful response" do
+  describe 'GET /users/:id' do
+    it 'Renders a successful response' do
       get '/users/1'
       expect(response).to be_successful
     end
 
-    it "Response with correct status" do
+    it 'Response with correct status' do
       get '/users/1'
       expect(response.status).to eq(200)
     end
@@ -44,5 +44,4 @@ RSpec.describe "Users", type: :request do
       expect(response).to render_template('show')
     end
   end
-
 end
