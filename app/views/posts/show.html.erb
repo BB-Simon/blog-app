@@ -1,3 +1,29 @@
-<h1>
-  Here is a post details of a given post for a given user
-</h1>
+<section class="posts-section">
+  <div>
+    <div class="user-post">
+      <div class="post-header">
+        <h2 class="post-title"><%= @post.title  %> by <%= @post.author.name %> </h2>
+        <span class="likes-comments-number">
+          <% if @post.comments_counter != nil %>
+            Comments: <%= @post.comments_counter %>
+          <% else %>
+            Comments: 0
+          <% end %>
+
+          <% if @post.likes_counter != nil %>
+            Likes: <%= @post.likes_counter %>
+          <% else %>
+            Likes: 0
+          <% end %>
+        </span>
+      </div>
+      <p><%= @post.text %></p>
+      
+    </div>
+    <ul class="post-comments">
+      <% @post.top_5_comment.each do |comment| %>
+        <li class="comment"><%= comment.author.name%>: <%=comment.text%></li>
+      <% end %>
+    </ul>
+  </div>
+</section>

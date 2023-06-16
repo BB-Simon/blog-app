@@ -1,0 +1,28 @@
+.posts-section {
+  padding: 50px;
+}
+
+.comment {
+  margin: 12px 0;
+}
+
+.btn-pagination {
+  border: 1px solid rgba(186, 186, 186, 0.1);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #000;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.likes-comments-number {
+  display: block;
+  text-align: right;
+}

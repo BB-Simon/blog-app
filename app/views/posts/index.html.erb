@@ -1,1 +1,57 @@
-<h1>Here is a list of all posts for a given user</h1>
+<section class="posts-section">
+  <button class="btn" type="button">
+    <%= link_to 'Go back to all users', users_path, class:'ass-all-post-btn' %>
+  </button>
+
+  <div class="list-item">
+    <div class="photo-wrapper">
+      <img src=<%=@user.photo%> alt=<%=@user.name%> />
+    </div>
+    <div class="user-info">
+      <h2><%= @user.name %></h2>
+      <span class="post-number">
+        <% if @user.post_counter != nil %>
+          Number of posts: <%= @user.post_counter %>
+        <% else %>
+          Number of posts: 0
+        <% end %>
+      </span>
+    </div>
+  </div>
+
+  <ul class="post-list">
+    <% @posts.each do |post| %>
+      <li>
+        <div class="user-post">
+          <h2 class="post-title"><%= link_to post.title, post_path(@user, post)  %></h2>
+          <p><%= post.text %></p>
+          <span class="post-number">
+            <% if post.comments_counter != nil %>
+              Comments: <%= post.comments_counter %>
+            <% else %>
+              Comments: 0
+            <% end %>
+
+            <% if post.likes_counter != nil %>
+              Likes: <%= post.likes_counter %>
+            <% else %>
+              Likes: 0
+            <% end %>
+          </span>
+        </div>
+        <ul class="post-comments">
+          <% post.top_5_comment.each do |comment| %>
+            <li class="comment"><%= comment.author.name%>: <%=comment.text%></li>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+
+  <div class="all-btn-wrapper">
+    <button class="btn-pagination" type="button">
+      Pagination
+    </button>
+  </div>
+
+</section>
