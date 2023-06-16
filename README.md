@@ -93,6 +93,9 @@
     - If response status was correct.
     - If a correct template was rendered.
     - If the response body includes correct placeholder text.
+- [x] Implement the design from the sneak peek wireframes:
+    - Styling is nice to have but focus on making sure everything functions first. (Note: Ignore login logic, you would be using Devise in coming milestone)
+    - Use methods that you have created in the Blog App - processing data in models.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
