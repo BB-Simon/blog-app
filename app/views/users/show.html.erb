@@ -1,1 +1,54 @@
-<h1>Here is a details of a given user</h1>
+<section class="show-user-section">
+  <button class="btn" type="button">
+    <%= link_to 'Go back to all users', users_path, class:'ass-all-post-btn' %>
+  </button>
+
+  <div class="list-item">
+    <div class="photo-wrapper">
+      <img src=<%=@user.photo%> alt=<%=@user.name%> />
+    </div>
+    <div class="user-info">
+      <h2><%= @user.name %></h2>
+      <span class="post-number">
+        <% if @user.post_counter != nil %>
+          Number of posts: <%= @user.post_counter %>
+        <% else %>
+          Number of posts: 0
+        <% end %>
+      </span>
+    </div>
+  </div>
+
+  <div class="user-bio">
+    <h3 class="bio-title">Bio</h3>
+    <p><%= @user.bio %></p>
+  </div>
+
+  <ul class="post-list">
+    <% @recent_posts.each do |post| %>
+      <li class="user-post">
+        <h2 class="post-title"><%= link_to post.title, post_path(post)  %></h2>
+        <p><%= post.text %></p>
+        <span class="post-number">
+          <% if post.comments_counter != nil %>
+            Comments: <%= post.post_counter %>
+          <% else %>
+            Comments: 0
+          <% end %>
+
+          <% if post.likes_counter != nil %>
+            Likes: <%= post.likes_counter %>
+          <% else %>
+            Likes: 0
+          <% end %>
+        </span>
+      </li>
+    <% end %>
+  </ul>
+
+  <div class="all-btn-wrapper">
+    <button class="btn" type="button">
+      <%= link_to 'See all posts', posts_path(@user), class:'ass-all-post-btn' %>
+    </button>
+  </div>
+</section>

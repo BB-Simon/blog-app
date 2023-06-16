@@ -1,0 +1,78 @@
+.user-section,
+.show-user-section {
+  /* background-color: aqua; */
+  padding: 50px;
+}
+
+.list-item {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.photo-wrapper {
+  width: 120px;
+  height: 120px;
+}
+
+.photo-wrapper > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.user-info {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 4px;
+  margin-left: 12px;
+  padding: 24px;
+  flex-grow: 1;
+}
+
+.bio-title {
+  margin-bottom: 24px;
+}
+
+.user-bio {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 12px;
+}
+
+.user-post,
+.post-comments {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 12px;
+}
+
+.post-title {
+  margin-bottom: 24px;
+}
+
+.post-number {
+  display: block;
+  margin-top: 8px;
+  text-align: right;
+}
+
+.all-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.btn {
+  border: 1px solid rgba(186, 186, 186, 0.1);
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.ass-all-post-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #000;
+}
