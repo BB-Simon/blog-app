@@ -36,14 +36,23 @@
   flex-direction: column;
 }
 
-.new-post-form h1 {
+.new-post-form h1,
+.comment-form h1 {
   margin: 12px 0 24px;
   font-size: 34px;
   font-weight: bold;
   color: #333;
 }
 
-.new-post-form label {
+.comment-form h1 {
+  margin: 12px 0 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.new-post-form label,
+.comment-form label {
   margin: 0 0 6px;
   font-size: 16px;
   font-weight: 600;
@@ -52,7 +61,9 @@
 
 .post-form-title,
 .post-form-text,
-.form-submit-btn {
+.form-submit-btn,
+.comment-field,
+.common-btn {
   width: 100%;
   padding: 12px 10px;
   font-size: 16px;
@@ -61,16 +72,31 @@
   margin-bottom: 24px;
 }
 
-.post-form-text {
+.post-form-text,
+.comment-field{
   min-height: 100px;
 }
 
-.form-submit-btn {
+.form-submit-btn,
+.common-btn {
   cursor: pointer;
 }
 
 .post-title:focus,
-.post-form-text {
+.post-form-text:focus,
+.comment-field:focus {
   outline: none;
   border: 1px solid #333;
+}
+
+.like-btn {
+  /* width: 100%; */
+  margin-top: 24px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
 }
