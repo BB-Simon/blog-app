@@ -40,7 +40,8 @@
 }
 
 .user-post,
-.post-comments {
+.post-comments,
+.comment-form {
   border: 1px solid rgb(190, 190, 190);
   border-radius: 4px;
   padding: 24px;

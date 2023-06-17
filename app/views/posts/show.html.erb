@@ -1,4 +1,10 @@
 <section class="posts-section">
+  <% if notice %>
+    <p style="margin-bottom: 12px;"><%= notice %></p>
+  <%end%>
+  <button class="btn" type="button">
+    <%= link_to 'Go back to all posts', posts_path, class:'ass-all-post-btn' %>
+  </button>
   <div>
     <div class="user-post">
       <div class="post-header">
@@ -18,7 +24,10 @@
         </span>
       </div>
       <p><%= @post.text %></p>
-      
+      <div class="btns-wrapper">
+        <%= button_to "Comment", new_comment_path, method: :get, class: ['like-btn c-btn'] %>
+        <%= button_to "Like", likes_path(@post), method: :post, class: ['like-btn'] %>
+      </div>
     </div>
     <ul class="post-comments">
       <% @post.top_5_comment.each do |comment| %>

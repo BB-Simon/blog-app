@@ -97,6 +97,13 @@
     - Styling is nice to have but focus on making sure everything functions first. (Note: Ignore login logic, you would be using Devise in coming milestone)
     - Use methods that you have created in the Blog App - processing data in models.
 
+- [x] Create a method called current_user in your ApplicationController to make current user data available to all controllers.
+    - It will return the first user from the database.
+- [x] Create forms to perform the following functions:
+    - Creates a Post on behalf of the current_user (use the method that you created in your ApplicationController).
+    - Create a comment on behalf of the current_user (use the method that you created in your ApplicationController).
+- [x] Allow Users to add likes to Posts.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
