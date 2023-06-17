@@ -2,6 +2,9 @@
   <button class="btn" type="button">
     <%= link_to 'Go back to all users', users_path, class:'ass-all-post-btn' %>
   </button>
+  <button class="btn" type="button">
+    <%= link_to 'Create new post', mew_post_path(@user), class:'ass-all-post-btn' %>
+  </button>
 
   <div class="list-item">
     <div class="photo-wrapper">
@@ -31,7 +34,7 @@
         <p><%= post.text %></p>
         <span class="post-number">
           <% if post.comments_counter != nil %>
-            Comments: <%= post.post_counter %>
+            Comments: <%= post.comments_counter %>
           <% else %>
             Comments: 0
           <% end %>
