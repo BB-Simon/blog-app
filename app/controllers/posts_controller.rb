@@ -9,7 +9,7 @@ class PostsController < ApplicationController
     @comment = Comment.new
   end
 
-  def new 
+  def new
     @post = Post.new
   end
 
