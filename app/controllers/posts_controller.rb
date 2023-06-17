@@ -6,7 +6,6 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.where(author_id: params[:user_id], id: params[:post_id]).first
-    @comment = Comment.new
   end
 
   def new

@@ -24,14 +24,15 @@
         </span>
       </div>
       <p><%= @post.text %></p>
-      <%= button_to "Like", likes_path(@post), method: :post, class: ['like-btn'] %>
+      <div class="btns-wrapper">
+        <%= button_to "Comment", new_comment_path, method: :get, class: ['like-btn c-btn'] %>
+        <%= button_to "Like", likes_path(@post), method: :post, class: ['like-btn'] %>
+      </div>
     </div>
     <ul class="post-comments">
       <% @post.top_5_comment.each do |comment| %>
         <li class="comment"><%= comment.author.name%>: <%=comment.text%></li>
       <% end %>
     </ul>
-
-    <%= render 'shared/comment_form', post: @post, comment: @comment%>
   </div>
 </section>
