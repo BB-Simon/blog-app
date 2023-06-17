@@ -7,4 +7,8 @@ class PostsController < ApplicationController
   def show
     @post = Post.where(author_id: params[:user_id], id: params[:id]).first
   end
+
+  def new 
+    @post = Post.new
+  end
 end

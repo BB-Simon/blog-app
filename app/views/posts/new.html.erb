@@ -1,0 +1,13 @@
+<section class="posts-section">
+  <button class="btn" type="button">
+    <%= link_to 'Go back to all users', users_path, class:'ass-all-post-btn' %>
+  </button>
+  <%= form_with model:@post, html: { class: 'new-post-form'} do |form| %>
+    <h1>Create Post</h1>
+    <%= form.label :Title %>
+    <%= form.text_field :title, class: 'post-form-title' %>
+    <%= form.label :Post%>
+    <%= form.text_area :text, class: 'post-form-text' %>
+    <%= form.submit 'Add', class: 'form-submit-btn' %>
+  <% end %>
+</section>
