@@ -27,7 +27,7 @@
   </div>
 
   <ul class="post-list">
-    <% @posts.each do |post| %>
+    <% @user.post.each do |post| %>
       <li>
         <div class="user-post">
           <h2 class="post-title"><%= link_to post.title, post_path(@user, post)  %></h2>
