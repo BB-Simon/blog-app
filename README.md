@@ -6,18 +6,18 @@
 
 # 📗 Table of Contents
 
-- [Capstone-ruby](#capstone-ruby)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Blog App\] ](#-Blog App-)
+- [📖 \[Blog App\] ](#-blog-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
+    - [Run the project](#run-the-project)
     - [Run tests](#run-tests)
-    - [Deployment](#deployment)
-  - [👥 Authors ](#-authors-)
+  - [👤 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -153,11 +153,17 @@ To run tests, run the following command:
 
 ## 👤 Author <a name="authors"></a>
 
-**BB Simon**
+👨‍🚀 **BB Simon**
 
 - GitHub: [@githubhandle](https://github.com/BB-Simon) 
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/bb-simon/)
 - Twitter: [@twitterhandle](https://twitter.com/bb_s_imon) 
+
+👨‍🚀 **M Nisar Ali**
+
+- GitHub: [@MNisarAli](https://github.com/MNisarAli)
+- Gmail: [@dr.nisaralig@gmail.com](mailto:dr.nisaralig@gmail.com)
+- LinkedIn: [@Muhammad Nisar Ali](https://www.linkedin.com/in/muhammad-nisar-ali)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
