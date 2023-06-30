@@ -4,7 +4,8 @@ RSpec.describe Post, type: :system do
   describe 'Post index page' do
     before do
       @user = User.create(name: 'Anna', photo: 'https://unsplash.com/photos', bio: 'Project manager', post_counter: 0)
-      @first_post = Post.create(author_id: @user.id, title: 'First post', text: 'First post', comments_counter: 0, likes_counter: 0)
+      @first_post = Post.create(author_id: @user.id, title: 'First post', text: 'First post', comments_counter: 0,
+                                likes_counter: 0)
       @comment = Comment.create(author: @user, post: @first_post, text: 'I like it')
       @like = Like.create(author: @user, post: @first_post)
       visit posts_path(@user)

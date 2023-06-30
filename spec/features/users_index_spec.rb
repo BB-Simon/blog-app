@@ -5,10 +5,12 @@ RSpec.describe 'Users', type: :system do
     before do
       allow_any_instance_of(ApplicationController)
         .to receive(:current_user)
-        .and_return(User.create(name: 'Tom', photo: 'https://unsplash.com/photos', bio: 'Teacher from Mexico.', post_counter: 0))
+        .and_return(User.create(name: 'Tom', photo: 'https://unsplash.com/photos', bio: 'Teacher from Mexico.',
+                                post_counter: 0))
       @first_user = User.create(name: 'Simon', photo: 'https://randomuser.me/api/portraits/women/67.jpg',
                                 bio: 'Teacher from Egypt.', post_counter: 0)
-      @second_user = User.create(name: 'Enis', photo: 'https://randomuser.me/api/portraits/women/70.jpg', bio: 'Teacher from Mexico.', post_counter: 0)
+      @second_user = User.create(name: 'Enis', photo: 'https://randomuser.me/api/portraits/women/70.jpg',
+                                 bio: 'Teacher from Mexico.', post_counter: 0)
       visit root_path
     end
     it 'shows the right content' do
@@ -25,7 +27,8 @@ RSpec.describe 'Users', type: :system do
       expect(page).to have_css("img[src='https://randomuser.me/api/portraits/women/70.jpg']")
     end
     it 'I can see the number of posts each user has written.' do
-      Post.create(author: @first_user, title: 'Hello', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
+      Post.create(author: @first_user, title: 'Hello', text: 'This is my first post', comments_counter: 0,
+                  likes_counter: 0)
       expect(page).to have_content('Number of posts: 1')
       expect(page).to have_content('Number of posts: 0')
     end

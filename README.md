@@ -103,6 +103,8 @@
     - Creates a Post on behalf of the current_user (use the method that you created in your ApplicationController).
     - Create a comment on behalf of the current_user (use the method that you created in your ApplicationController).
 - [x] Allow Users to add likes to Posts.
+- [x] Make sure that the N+1 problem is solved when fetching all posts and their comments for a user.
+- [x] Use Capybara to write integration tests for each view in your project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

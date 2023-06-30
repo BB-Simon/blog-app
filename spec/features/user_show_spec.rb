@@ -3,10 +3,14 @@ require 'rails_helper'
 RSpec.describe 'Users', type: :system do
   describe 'user show page' do
     before do
-      @first_user = User.create(name: 'Simon', photo: 'https://unsplash.com/photos', bio: 'Teacher from Egypt.', post_counter: 0)
-      @first_post = Post.create(author: @first_user, title: 'first', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
-      @second_post = Post.create(author: @first_user, title: 'second', text: 'This is my second post', comments_counter: 0, likes_counter: 0)
-      @third_post = Post.create(author: @first_user, title: 'third', text: 'This is my third post', comments_counter: 0, likes_counter: 0)
+      @first_user = User.create(name: 'Simon', photo: 'https://unsplash.com/photos', bio: 'Teacher from Egypt.',
+                                post_counter: 0)
+      @first_post = Post.create(author: @first_user, title: 'first', text: 'This is my first post',
+                                comments_counter: 0, likes_counter: 0)
+      @second_post = Post.create(author: @first_user, title: 'second', text: 'This is my second post',
+                                 comments_counter: 0, likes_counter: 0)
+      @third_post = Post.create(author: @first_user, title: 'third', text: 'This is my third post',
+                                comments_counter: 0, likes_counter: 0)
       visit user_path(@first_user)
     end
     it 'I can see the user profile picture.' do
