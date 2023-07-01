@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_param)
+    @post = Post.new(post_params)
     @post.comments_counter = 0
     @post.likes_counter = 0
     @post.author_id = current_user.id
@@ -26,15 +26,15 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post = Post.find(params[:id])
+    @post = Post.find(params[:post_id])
     @post.destroy
 
-    redirect_to root_path, status: :see_other
+    redirect_to posts_path(current_user), notice: 'Post Deleted Successfully'
   end
 
   private
 
-  def post_param
+  def post_params
     params.require(:post).permit(:title, :text)
   end
 end
