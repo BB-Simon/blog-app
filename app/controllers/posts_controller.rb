@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+  
   def index
     @user = User.includes(post: [:author, { comment: [:author] }]).find(params[:user_id])
   end
