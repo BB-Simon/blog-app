@@ -113,6 +113,12 @@
       - Ask for confirmation of email.
       - Can reset password.
 - [x] Modify the views in devise for registration and login to match the wireframes from the Sneak Peek and your styling.
+- [x] Install CanCanCan in your project.
+- [x] Add a role column to the users table. Remember to use a migration for this.
+- [x] A user can delete a post if it is theirs or if they have an admin role (column role has value "admin"). Use CanCanCan for this authorization.
+    - For that you need to implement the post deleting functionality. Add the "Delete" button to the view and make sure that only authorized users can see it.
+- [x] A user can delete a comment if it is theirs or if they have an admin role (column role has value "admin"). Use CanCanCan for this authorization.
+    - For that you need to implement the comment deleting functionality. Add the "Delete" button to the view and make sure that only authorized users can see it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
