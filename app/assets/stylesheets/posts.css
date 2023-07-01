@@ -27,7 +27,9 @@
   text-align: right;
 }
 
-.new-post-form {
+.new-post-form,
+.signup-form,
+.login-form {
   max-width: 700px;
   margin: 0 auto;
 
@@ -37,7 +39,9 @@
 }
 
 .new-post-form h1,
-.comment-form h1 {
+.comment-form h1,
+.signup-title,
+.login-title {
   margin: 12px 0 24px;
   font-size: 34px;
   font-weight: bold;
@@ -52,7 +56,9 @@
 }
 
 .new-post-form label,
-.comment-form label {
+.comment-form label,
+.signup-form label,
+.login-form label {
   margin: 0 0 6px;
   font-size: 16px;
   font-weight: 600;
@@ -63,7 +69,9 @@
 .post-form-text,
 .form-submit-btn,
 .comment-field,
-.common-btn {
+.common-btn,
+.signup-form-field,
+.login-form-field {
   width: 100%;
   padding: 12px 10px;
   font-size: 16px;

@@ -105,6 +105,14 @@
 - [x] Allow Users to add likes to Posts.
 - [x] Make sure that the N+1 problem is solved when fetching all posts and their comments for a user.
 - [x] Use Capybara to write integration tests for each view in your project
+- [x] Remove current_user method in ApplicationController, devise will provide us with one.
+- [x] Install and setup devise.
+      - Can register a new user.
+      - User logs in with a combination of email and password.
+      - Hashed password should be stored in the database.
+      - Ask for confirmation of email.
+      - Can reset password.
+- [x] Modify the views in devise for registration and login to match the wireframes from the Sneak Peek and your styling.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
