@@ -9,6 +9,9 @@ gem 'rails', '~> 7.0.5'
 # For authorization
 gem 'cancancan'
 
+# For APi test and doc
+gem 'rswag'
+
 # For registration and login of users.
 gem 'devise'
 
