@@ -119,6 +119,10 @@
     - For that you need to implement the post deleting functionality. Add the "Delete" button to the view and make sure that only authorized users can see it.
 - [x] A user can delete a comment if it is theirs or if they have an admin role (column role has value "admin"). Use CanCanCan for this authorization.
     - For that you need to implement the comment deleting functionality. Add the "Delete" button to the view and make sure that only authorized users can see it.
+- [x] Create an API endpoint to list all posts for a user.
+- [x] Create an API endpoint to list all comments for a user's post.
+- [x] Create an API endpoint to add a comment to a post. Remember that the owner of the comment is the user that makes it; it should not be set by passing a parameter.
+- [x] Your API endpoints should receive JSON and respond JSON as well.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
