@@ -27,11 +27,19 @@
       <div class="btns-wrapper">
         <%= button_to "Comment", new_comment_path, method: :get, class: ['like-btn c-btn'] %>
         <%= button_to "Like", likes_path(@post), method: :post, class: ['like-btn'] %>
+        <% if can? :destroy, @post %>
+          <%= button_to "Delete Post", post_path(@post), method: :delete, class: ['like-btn d-btn']%>
+        <%end%>
       </div>
     </div>
     <ul class="post-comments">
       <% @post.top_5_comment.each do |comment| %>
         <li class="comment"><%= comment.author.name%>: <%=comment.text%></li>
+        <% if can? :destroy, comment %>
+          <%= form_with url: "/users/#{@post.author.id}/posts/#{@post.id}/comments/#{comment.id}" , method: :delete do |f|%>
+          <%= f.submit 'Delete', class: 'like-btn d-btn' %>
+          <%end%>
+        <%end%>
       <% end %>
     </ul>
   </div>

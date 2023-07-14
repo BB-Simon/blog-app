@@ -105,6 +105,24 @@
 - [x] Allow Users to add likes to Posts.
 - [x] Make sure that the N+1 problem is solved when fetching all posts and their comments for a user.
 - [x] Use Capybara to write integration tests for each view in your project
+- [x] Remove current_user method in ApplicationController, devise will provide us with one.
+- [x] Install and setup devise.
+      - Can register a new user.
+      - User logs in with a combination of email and password.
+      - Hashed password should be stored in the database.
+      - Ask for confirmation of email.
+      - Can reset password.
+- [x] Modify the views in devise for registration and login to match the wireframes from the Sneak Peek and your styling.
+- [x] Install CanCanCan in your project.
+- [x] Add a role column to the users table. Remember to use a migration for this.
+- [x] A user can delete a post if it is theirs or if they have an admin role (column role has value "admin"). Use CanCanCan for this authorization.
+    - For that you need to implement the post deleting functionality. Add the "Delete" button to the view and make sure that only authorized users can see it.
+- [x] A user can delete a comment if it is theirs or if they have an admin role (column role has value "admin"). Use CanCanCan for this authorization.
+    - For that you need to implement the comment deleting functionality. Add the "Delete" button to the view and make sure that only authorized users can see it.
+- [x] Create an API endpoint to list all posts for a user.
+- [x] Create an API endpoint to list all comments for a user's post.
+- [x] Create an API endpoint to add a comment to a post. Remember that the owner of the comment is the user that makes it; it should not be set by passing a parameter.
+- [x] Your API endpoints should receive JSON and respond JSON as well.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
